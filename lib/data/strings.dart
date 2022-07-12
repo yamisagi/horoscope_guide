@@ -1,20 +1,49 @@
 class Strings {
   Strings();
-  static const String APP_NAME = "Burç Rehberi";
+  static const String APP_NAME = "Horoscope Guide";
+
+  static const List<String> IMG_LOGO = [
+    "assets/images/aries.png",
+    "assets/images/taurus.png",
+    "assets/images/gemini.png",
+    "assets/images/cancer.png",
+    "assets/images/leo.png",
+    "assets/images/virgo.png",
+    "assets/images/libra.png",
+    "assets/images/scorpio.png",
+    "assets/images/sagittarius.png",
+    "assets/images/capricorn.png",
+    "assets/images/aquarius.png",
+    "assets/images/pisces.png",
+  ];
+  static const List<String> IMG_SPLASH = [
+    "assets/images/aries_large.png",
+    "assets/images/taurus_large.png",
+    "assets/images/gemini_large.png",
+    "assets/images/cancer_large.png",
+    "assets/images/leo_large.png",
+    "assets/images/virgo_large.png",
+    "assets/images/libra_large.png",
+    "assets/images/scorpio_large.png",
+    "assets/images/sagittarius_large.png",
+    "assets/images/capricorn_large.png",
+    "assets/images/aquarius_large.png",
+    "assets/images/pisces_large.png",
+  ];
 
   static const List<String> BURC_ADLARI = [
-    "Koc",
-    "Boga",
-    "Ikizler",
-    "Yengec",
+    "Koç",
+    "Boğa",
+    "İkizler",
+    "Yengeç",
     "Aslan",
-    "Basak",
+    "Başak",
     "Terazi",
     "Akrep",
     "Yay",
-    "Oglak",
+    "Oğlak",
     "Kova",
-    "Balik"
+    "Balık"
   ];
 
   static const List<String> BURC_TARIHLERI = [

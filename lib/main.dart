@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:horoscope_guide/core/zodiac_list.dart';
 
 void main() => runApp(const MyApp());
 
@@ -8,15 +9,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
-      home: Scaffold(
-        appBar: AppBar(
-          title: const Text(''),
-        ),
-        body: Center(
-          child: Container(),
-        ),
+      theme: ThemeData(
+        primarySwatch: Colors.lime,
       ),
+      title: 'Material App',
+      home:  ZodiacList(),
     );
   }
 }

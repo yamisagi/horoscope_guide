@@ -60,9 +60,10 @@ Flutter features:
 
 * Used Material 3 for the UI.
 * Used ThemeData for the managing the theme.
+* Used [onGenerateRoute](https://api.flutter.dev/flutter/material/MaterialApp/onGenerateRoute.html) to create a routing system.
 * Used [CustomScrollView](https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html) for customize items and used [SliverAppBar](https://api.flutter.dev/flutter/material/SliverAppBar-class.html).
 * Used [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html) for create a list of items.
-* Used [Card](https://docs.flutter.dev/development/ui/layout#card) to way look better.
+* Used [Card](https://docs.flutter.dev/development/ui/layout#card) to make items look better.
 * Used 3rd party library [Palette Generator](https://pub.dev/packages/palette_generator) to get the dominant colors  of the images.
 * Used [Navigator](https://docs.flutter.dev/development/ui/navigation) to navigate between pages.
 * Used [ListTile](https://api.flutter.dev/flutter/material/ListTile-class.html) for using logo of Zodiac items.

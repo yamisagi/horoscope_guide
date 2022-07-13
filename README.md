@@ -3,10 +3,10 @@
     <img src="https://avatars.githubusercontent.com/u/84624853?v=4" width="100" height="100">
   </a>
 
-  <h3 align="center">Horoscpoe Guide</h3>
+  <h3 align="center">Horoscope Guide</h3>
 
   <p align="center">
-    This project is gonna be basic Zodiac Signs app. </p>
+    This project is basic Zodiac Signs app. Include [TR] informations about horoscopes.</p>
     <a href="https://github.com/yamisagi/yamisagi"><strong>About Me 💙»</strong></a>
     <br />
     <br />
@@ -58,11 +58,16 @@ In this project, I am trying to create a Horoscope app.
 
 Flutter features:
 
+* Used Material 3 for the UI.
+* Used ThemeData for the managing the theme.
+* Used [CustomScrollView](https://api.flutter.dev/flutter/widgets/CustomScrollView-class.html) for customize items and used [SliverAppBar](https://api.flutter.dev/flutter/material/SliverAppBar-class.html).
+* Used [ListView](https://api.flutter.dev/flutter/widgets/ListView-class.html) for create a list of items.
+* Used [Card](https://docs.flutter.dev/development/ui/layout#card) to way look better.
+* Used 3rd party library [Palette Generator](https://pub.dev/packages/palette_generator) to get the dominant colors  of the images.
+* Used [Navigator](https://docs.flutter.dev/development/ui/navigation) to navigate between pages.
+* Used [ListTile](https://api.flutter.dev/flutter/material/ListTile-class.html) for using logo of Zodiac items.
+* Used OOP basics to write clean code. 
 
-
-
-
-<p align="center">(Still working on it...)</p>
 
 
 
@@ -78,13 +83,9 @@ Flutter features:
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
-## Roadmap
-
--  I will update roadmap.
 
 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
 
 
 

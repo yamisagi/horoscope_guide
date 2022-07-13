@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:horoscope_guide/core/zodiac_details.dart';
 import 'package:horoscope_guide/model/zodiac_model.dart';
 
 class ZodiacItem extends StatelessWidget {
@@ -26,12 +25,8 @@ class ZodiacItem extends StatelessWidget {
             ),
             trailing: const Icon(Icons.keyboard_arrow_right),
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                    builder: (context) =>
-                        ZodiacDetails(selectedZodiac: zodiac)),
-              );
+              Navigator.pushNamed(context, '/zodiac_details',
+                  arguments: zodiac);
             },
           )),
     );

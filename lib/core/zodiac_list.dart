@@ -1,5 +1,4 @@
 // ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
 import 'package:horoscope_guide/core/zodiac_item.dart';
 import 'package:horoscope_guide/data/product_variables.dart';
@@ -14,8 +13,6 @@ class ZodiacList extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    debugPrint(allItems.toString());
-
     return Scaffold(
       appBar: AppBar(
         title: const Text(ProductValues.listAppBarTitle),

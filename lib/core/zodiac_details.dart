@@ -22,12 +22,21 @@ class _ZodiacDetailsState extends State<ZodiacDetails> {
   /// We need to call our func
   @override
   void initState() {
+    debugPrint('initState() called');
     super.initState();
-    colorChanger();
+
+    /// This line is working after BuildContext is done with its initialization,
+    /// So it is calling our function after first build handle its job.
+    /// We can track the build process by using debugPrint()
+    /// initState() --> build() --> build() is done --> setState() triggered --> build() again.
+    WidgetsBinding.instance.addPostFrameCallback(
+      (_) => colorChanger(),
+    );
   }
 
   @override
   Widget build(BuildContext context) {
+    debugPrint('build() called');
     return Scaffold(
         body: CustomScrollView(
       slivers: [
@@ -79,12 +88,14 @@ class _ZodiacDetailsState extends State<ZodiacDetails> {
   /// This function is used to change the color of the appbar.
   /// We used the PaletteGenerator to get the color of the image.
   void colorChanger() async {
+    debugPrint('build() is done calling setState()');
     _generator = await PaletteGenerator.fromImageProvider(
       AssetImage(widget.selectedZodiac.splash),
     );
     _color = _generator?.dominantColor?.color;
 
     /// And let setState() to update the color of the appbar.
+    debugPrint('setState() called');
     setState(() {});
   }
 }

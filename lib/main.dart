@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:horoscope_guide/core/route_generator.dart';
 import 'package:horoscope_guide/core/zodiac_list.dart';
 import 'package:horoscope_guide/data/theme.dart';
 
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeOfProduct.themeData,
       title: 'Horoscope Guide',
+      onGenerateRoute: RouteGenerator.route,
       home: ZodiacList(),
     );
   }
